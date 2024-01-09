@@ -1,0 +1,1123 @@
+{
+	"info": {
+		"_postman_id": "b957bf8b-56a4-439b-a1e8-90ec2917c0dc",
+		"name": "Задание 10.7.6 (HW-01)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30372746"
+	},
+	"item": [
+		{
+			"name": "1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=кошка&breed_code=cockatiel&gender_code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed_code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=кошка&breed_code=german_shepherd&gender_code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed_code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=кошка&breed_code=-&gender_code=-&age=-",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed_code",
+							"value": "-"
+						},
+						{
+							"key": "gender_code",
+							"value": "-"
+						},
+						{
+							"key": "age",
+							"value": "-"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=попугай&breed_code=cockatiel&gender_code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed_code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=попугай&breed_code=german_shepherd&gender_code=m&age=-",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed_code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "-"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=попугай&breed_code=siberian_cat&gender_code=-&age=2",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed_code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender_code",
+							"value": "-"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=попугай&breed_code=-&gender_code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed_code",
+							"value": "-"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=попугай&breed_code=siberian_cat&gender_code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed_code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=собака&breed_code=german_shepherd&gender_code=-&age=1",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "собака"
+						},
+						{
+							"key": "breed_code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender_code",
+							"value": "-"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=собака&breed_code=siberian_cat&gender_code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "собака"
+						},
+						{
+							"key": "breed_code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=собака&breed_code=-&gender_code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "собака"
+						},
+						{
+							"key": "breed_code",
+							"value": "-"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=собака&breed_code=siberian_cat&gender_code=m&age=-",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "собака"
+						},
+						{
+							"key": "breed_code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "-"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=собака&breed_code=cockatiel&gender_code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "собака"
+						},
+						{
+							"key": "breed_code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=кошка&breed_code=siberian_cat&gender_code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed_code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=кошка&breed_code=cockatiel&gender_code=-&age=0",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed_code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender_code",
+							"value": "-"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=кошка&breed_code=german_shepherd&gender_code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed_code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=-&breed_code=-&gender_code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "-"
+						},
+						{
+							"key": "breed_code",
+							"value": "-"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=-&breed_code=siberian_cat&gender_code=-&age=2",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "-"
+						},
+						{
+							"key": "breed_code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender_code",
+							"value": "-"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=-&breed_code=cockatiel&gender_code=m&age=-",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "-"
+						},
+						{
+							"key": "breed_code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "-"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=-&breed_code=german_shepherd&gender_code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "-"
+						},
+						{
+							"key": "breed_code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://158.160.56.133/app/pets?species_name=-&breed_code=siberian_cat&gender_code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"158",
+						"160",
+						"56",
+						"133"
+					],
+					"path": [
+						"app",
+						"pets"
+					],
+					"query": [
+						{
+							"key": "species_name",
+							"value": "-"
+						},
+						{
+							"key": "breed_code",
+							"value": "siberian_cat"
+						},
+						{
+							"key": "gender_code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
